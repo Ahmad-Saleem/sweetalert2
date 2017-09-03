@@ -134,7 +134,7 @@ swal({
 
     <li class="html">
       <div class="ui">
-        <p>Custom HTML description and buttons</p>
+        <p>Custom HTML description and buttons with ARIA labels</p>
         <button aria-label="Try me! Example: Custom HTML description and buttons">Try me!</button>
       </div>
       <pre>
@@ -149,8 +149,10 @@ swal({
   showCancelButton: <span class="val">true</span>,
   confirmButtonText:
     <span class="str">'&lt;i class="fa fa-thumbs-up"&gt;&lt;/i&gt; Great!'</span>,
+  confirmButtonLabel: <span class="str">'Thumbs up, great!'</span>,
   cancelButtonText:
-    <span class="str">'&lt;i class="fa fa-thumbs-down"&gt;&lt;/i&gt;'</span>
+  <span class="str">'&lt;i class="fa fa-thumbs-down"&gt;&lt;/i&gt;'</span>,
+  cancelButtonLabel: <span class="str">'Thumbs down'</span>,
 })</pre>
     </li>
 
@@ -1253,7 +1255,9 @@ swal({
       showCloseButton: true,
       showCancelButton: true,
       confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!',
-      cancelButtonText: '<i class="fa fa-thumbs-down"></i>'
+      confirmButtonLabel: 'Thumbs up, great!',
+      cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+      cancelButtonLabel: 'Thumbs down'
     }).catch(swal.noop)
   })
 
